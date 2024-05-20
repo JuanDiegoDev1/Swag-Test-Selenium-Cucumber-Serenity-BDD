@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue= "com.swag.pe.definitions",
-        tags = "@Login"
+        tags = "@Suite"
 )
 public class Runner {
 }
