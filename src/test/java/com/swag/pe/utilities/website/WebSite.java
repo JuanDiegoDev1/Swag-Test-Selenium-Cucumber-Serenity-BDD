@@ -16,14 +16,9 @@ public class WebSite {
 
     @Step("Navegar al sitio web")
     public void navigateTo(String url) {
-        // Configura automáticamente el controlador del navegador
         WebDriverManager.chromedriver().setup();
-        //WebDriverManager.chromedriver().driverVersion("124.0.6367.203").setup();
-        // Inicializa el navegador
         WebDriver driver = Serenity.getWebdriverManager().getWebdriver();
-        // Establece la URL base
         swag.setDefaultBaseUrl(url);
-        // Abre la página
         swag.open();
     }
 }
